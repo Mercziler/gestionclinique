@@ -8,7 +8,7 @@
 	 $DB_SERVER = getenv('OPENSHIFT_MYSQL_DB_HOST');
 	 $DB_USER = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 	 $DB_PASS = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
-	 $DB_DATABASE = getenv('OPENSHIFT_GEAR_NAME');
+	 $DB_DATABASE = getenv('MYSQL_DATABASE');
 /******************************************************************/
 
 	 try { 
@@ -18,7 +18,7 @@
 	catch (PDOException $e) { 
 
 	 	if (empty($DB_DATABASE)) {
-	 		die("oui trouve") ;
+	 		//die("oui trouve") ;
 			echo $DB_DATABASE;
 	 	} else {
 	 		die("non trouve ") ;
