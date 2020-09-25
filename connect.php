@@ -10,11 +10,14 @@
 	 $DB_PASS = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
 	 $DB_DATABASE = getenv('OPENSHIFT_GEAR_NAME');
 /******************************************************************/
-echo $DB_SERVER;
-echo $DB_USER;
-	echo $DB_PASS;
-	echo $DB_DATABASE
 
-	 	//$conn =new mysqli($DB_SERVER,$DB_USER,$DB_PASS,$DB_DATABASE) or die(mysqli_connect_error());
+	 try { 
+	 $connect =  new PDO("mysql:host=$DB_SERVER; dbname=$DB_DATABASE", $DB_USER,$DB_PASS); 
+	 } 
  
+	
+ 
+	 $connect->query("set charcter_set_server = 'utf8'"); 
+	 $connect->query("set names'utf8' "); 
+	 	
 ?>
