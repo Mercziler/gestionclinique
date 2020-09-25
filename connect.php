@@ -5,9 +5,9 @@
 	fill those varaibles with your data
 	*/
  
-	 $DB_SERVER = getenv('OPENSHIFT_MYSQL_DB_HOST');
-	 $DB_USER = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
-	 $DB_PASS = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+	 $DB_SERVER = getenv('MYSQL_SERVICE_HOST');
+	 $DB_USER = getenv('MYSQL_USER');
+	 $DB_PASS = getenv('MYSQL_PASSWORD');
 	 $DB_DATABASE = getenv('MYSQL_DATABASE');
 /******************************************************************/
 
