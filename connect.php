@@ -6,10 +6,9 @@
 	*/
  
 	 $DB_SERVER = getenv('OPENSHIFT_MYSQL_DB_HOST');
-	 $DB_USER = "user"; 
-	 $DB_PASS = "password"; 
-	 $DB_DATABASE = "clinique"; 
-
+	 $DB_USER = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
+	 $DB_PASS = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+	 $DB_DATABASE = getenv('OPENSHIFT_GEAR_NAME');
 /******************************************************************/
  
 	 try { 
