@@ -5,9 +5,9 @@
 	fill those varaibles with your data
 	*/
  
-	 $DB_SERVER = "localhost"; 
-	 $DB_USER = "root"; 
-	 $DB_PASS = ""; 
+	 $DB_SERVER = getenv('OPENSHIFT_MYSQL_DB_HOST');
+	 $DB_USER = "user"; 
+	 $DB_PASS = "password"; 
 	 $DB_DATABASE = "clinique"; 
 
 /******************************************************************/
