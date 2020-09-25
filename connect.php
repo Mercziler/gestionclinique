@@ -14,6 +14,16 @@
 	 try { 
 	 $connect =  new PDO("mysql:host=$DB_SERVER; dbname=$DB_DATABASE", $DB_USER,$DB_PASS); 
 	 } 
+
+	catch (PDOException $e) { 
+
+	 	if (empty($DB_DATABASE)) {
+	 		die("oui trouve") ;
+	 	} else {
+	 		die("non trouve ") ;
+	 	}
+	 	 
+	 } 
  
 	
  
