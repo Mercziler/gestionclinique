@@ -19,6 +19,7 @@
 
 	 	if (empty($DB_DATABASE)) {
 	 		die("oui trouve") ;
+			echo $DB_DATABASE;
 	 	} else {
 	 		die("non trouve ") ;
 	 	}
