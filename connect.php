@@ -12,10 +12,10 @@
 /******************************************************************/
 
 
-echo $DB_DATABASE;
-echo $DB_USER;
-echo $DB_PASS;
-echo $DB_SERVER;
+//echo $DB_DATABASE;
+//echo $DB_USER;
+//echo $DB_PASS;
+//echo $DB_SERVER;
 	 	 try { 
 	 $connect =  new PDO("mysql:host=$DB_SERVER; dbname=$DB_DATABASE", $DB_USER,$DB_PASS); 
 	 } 
